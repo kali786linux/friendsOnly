@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gayathri", "Thin", "FreeMono", sans-serif;
+  overflow: hidden;
+  color: white;
+}
+
+body {
+  background: black;
+  height: 100vh;
+}
+
+.heading {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.time {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.time * {
+  margin-bottom: 20px;
+}
+
+.message {
+  font-size: 26px;
+  text-align: center;
+  opacity: 0;
+  animation: blink 0.4s infinite;
+}
+
+@keyframes blink {
+  from {
+    color: red;
+  }
+  to {
+    color: transparent;
+  }
+}
